@@ -1,0 +1,41 @@
+{
+  "slug": "iirs",
+  "name": "iirs",
+  "version": "2.0.0",
+  "license": "proprietary",
+  "brand": "iirs",
+  "author": "",
+  "authorEmail": "",
+  "authorUrl": "",
+  "pluginUrl": "",
+  "manualUrl": "",
+  "sourceUrl": "",
+  "donateUrl": "",
+  "changelogUrl": "",
+  "modules": [
+    {
+      "slug": "fslop",
+      "name": "fslop",
+      "description": "",
+      "tags": []
+    },
+    {
+      "slug": "cpole_tanh",
+      "name": "cpole_tanh",
+      "description": "Complex I/O non linear (tanh) low pass filter - 1 complex pole",
+      "tags": []
+    },
+    {
+      "slug": "cjpoles_tanh",
+      "name": "cjpoles_tanh",
+      "description": "Complex I/O non linear (tanh) low pass filter - 2 complex-conjugated poles",
+      "tags": []
+    },
+    {
+      "slug": "rclop",
+      "name": "rclop",
+      "description": "tau=R*C",
+      "tags": []
+    }
+  ]
+}

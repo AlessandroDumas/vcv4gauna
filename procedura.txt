@@ -1,0 +1,47 @@
+https://vcvrack.com/manual/PluginDevelopmentTutorial
+
+-SDK
+# export RACK_DIR=<Rack SDK folder>
+o aggiungere in ~/.bashrc
+
+-CREATE PLUGIN (Brand name)
+# $RACK_DIR/helper.py createplugin <plugin slug>
+
+-MODULE PANEL
+save the file to res/<module slug>.svg
+    Param: red #ff0000
+    Input: green #00ff00
+    Output: blue #0000ff
+    Light: magenta #ff00ff
+    Custom widgets: yellow #ffff00
+
+-ADD MODULE
+# $RACK_DIR/helper.py createmodule <module slug> res/<module slug>.svg src/<module slug>.cpp
+Add the Model to plugin.hpp and plugin.cpp as stated by the helper script.
+Attenzione al Maiuscolo prime lettere...
+# vim src/plugin.hpp
+# vim src/plugin.cpp
+
+-DSP
+edit void process()
+# vim src/<module slug>.cpp
+
+-COMPILE
+# make
+# make install
+
+-PLAY
+# ~/Rack2Free/Rack
+
+---------------------------
+
+es.
+# $RACK_DIR/helper.py createplugin cbites
+# cd cbites
+# inkscape
+# $RACK_DIR/helper.py createmodule cbiteA res/cbiteA.svg src/cbiteA.cpp
+# vim src/plugin.hpp
+# vim src/plugin.cpp
+# vim src/cbiteA.cpp
+# make
+# make install
